@@ -21,6 +21,8 @@ public class ShootAllDirection : Attack
 
     override public IEnumerator ExecuteAttack(float attackTime)
     {
+
+        //Edit Ammo Stuff------------
         if (myAmmo)
         {
             if (!myAmmo.CheckForAmmo(1)) yield break;
@@ -99,6 +101,9 @@ public class ShootAllDirection : Attack
                 infiniteAmmo = true;
             }
 
+
+
+            //Edit For Ammo--------------------------
             myAmmo = GetComponent<CollectibleManager>();
             if(!myAmmo)
             {

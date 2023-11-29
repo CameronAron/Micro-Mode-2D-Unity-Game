@@ -492,6 +492,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de47c7fb3e286884da789692719f9e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: 0
+  timeBetweenMultiple: 3
+  bacteriaPrefab: {fileID: 7213905819362839114, guid: 4e3a741a9d5fdae458da4aa5bb70e9d2, type: 3}
+  spawnPosition: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

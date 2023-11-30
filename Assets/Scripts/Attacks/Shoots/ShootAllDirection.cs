@@ -23,10 +23,14 @@ public class ShootAllDirection : Attack
     {
 
         //Edit Ammo Stuff------------
-        if (myAmmo)
+        if (PlayerMultiply.bacteriaCount > 1)
         {
-            if (!myAmmo.CheckForAmmo(1)) yield break;
-            else myAmmo.UpdateValue(Collectible_Type.Ammo, -1);
+            Destroy(GameObject.Find("Erm(Clone)"));
+            PlayerMultiply.bacteriaCount -= 1;
+        }
+        else
+        {
+            yield break;
         }
 
         attacking = true;
@@ -104,12 +108,12 @@ public class ShootAllDirection : Attack
 
 
             //Edit For Ammo--------------------------
-            myAmmo = GetComponent<CollectibleManager>();
-            if(!myAmmo)
-            {
-                Debug.LogError(gameObject.name + " cannot have finite ammo without a CollectableManager component! Turning on infinite ammo...", gameObject);
-                infiniteAmmo = true;
-            }
+            //myAmmo = GetComponent<CollectibleManager>();
+            //if(!myAmmo)
+            //{
+            //    Debug.LogError(gameObject.name + " cannot have finite ammo without a CollectableManager component! Turning on infinite ammo...", gameObject);
+            //    infiniteAmmo = true;
+            //}
         }
 
         if(liveTime <= 0)

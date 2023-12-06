@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 1229778149035193157}
   - component: {fileID: 3955694844383304099}
   - component: {fileID: 3360353120415620177}
+  - component: {fileID: -5887263835654102132}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -117,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dfda27d7be5e734ba50aefe51a92d4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 5
   currentHealth: 0
   immunityTime: 0.2
   immunityVisible: 1
@@ -228,7 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  agroDistance: 10
+  agroDistance: 100
   stoppingDistance: 0.1
   minimumDistance: 0.05
 --- !u!82 &3955694844383304099
@@ -341,3 +342,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animators: []
   moveSpeed: 5
+--- !u!114 &-5887263835654102132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6504737971334743117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f78525892c19dfe498af180def6e8e47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  attackSpeed: 0.5
+  attackInput: 0
+  attackOffset: {fileID: 0}
+  attackRange: 1
+  attackLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  weaponAnchor: {fileID: 0}

@@ -72,6 +72,8 @@ public class EnemyHealth : Health
                 else id.dropTheLoot();
             }
 
+
+            enemyKilledCount.enemiesKilled++;
             Destroy(gameObject);
         }
     }

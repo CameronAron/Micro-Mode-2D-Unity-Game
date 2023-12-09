@@ -25,6 +25,7 @@ public class enemyKilledCount : MonoBehaviour
 
         if (enemiesKilled >= enemygoal)
         {
+            enemiesKilled = 0;
             SceneManager.LoadScene(winSceneToLoad);
         }
     }

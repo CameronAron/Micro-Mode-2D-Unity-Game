@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using TMPro;
 
 public class PlayerMultiply : MonoBehaviour
 {
@@ -11,11 +12,12 @@ public class PlayerMultiply : MonoBehaviour
     public GameObject bacteriaPrefab;
 
     public static int bacteriaCount = 1;
+    public TMP_Text bacteriaCountText;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        bacteriaCount = 1;
     }
 
     // Update is called once per frame
@@ -32,6 +34,8 @@ public class PlayerMultiply : MonoBehaviour
                 spawnNew();
             }
         }
+
+        bacteriaCountText.text = $"Bacteria Cells: {bacteriaCount}";
     }
 
     public void spawnNew()

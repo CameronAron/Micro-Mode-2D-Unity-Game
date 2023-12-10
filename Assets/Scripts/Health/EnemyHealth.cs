@@ -74,6 +74,7 @@ public class EnemyHealth : Health
 
 
             enemyKilledCount.enemiesKilled++;
+            Endless.endlessEnemiesKilled++;
             Destroy(gameObject);
         }
     }

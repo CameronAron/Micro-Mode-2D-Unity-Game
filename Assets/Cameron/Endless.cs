@@ -1,32 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class enemyKilledCount : MonoBehaviour
+public class Endless : MonoBehaviour
 {
-    public static int enemiesKilled = 0;
+    public static int endlessEnemiesKilled = 0;
     public int enemygoal;
     public TMP_Text goalText;
 
     public string winSceneToLoad = "Beta Win Screen";
 
+
     // Start is called before the first frame update
     void Start()
     {
-        enemiesKilled = 0;
+        endlessEnemiesKilled = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        goalText.text = $"Enemies Killed: {enemiesKilled}/{enemygoal}";
-
-        if (enemiesKilled >= enemygoal)
-        {
-            enemiesKilled = 0;
-            SceneManager.LoadScene(winSceneToLoad);
-        }
+        goalText.text = $"Enemies Killed: {endlessEnemiesKilled}";
     }
 }

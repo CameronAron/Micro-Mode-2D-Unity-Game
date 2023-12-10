@@ -1501,6 +1501,7 @@ MonoBehaviour:
   - {fileID: 639522107}
   timer: 0
   enemyPrefab: {fileID: 6504737971334743117, guid: e73ebe1a3ed226147a28f1ae930f43ba, type: 3}
+  hardEnemyPrefab: {fileID: 6504737971334743117, guid: 100295ebf10f9c645801c20ec4c53388, type: 3}
   spawnTime: 5
 --- !u!1 &361974909
 GameObject:
@@ -4941,7 +4942,8 @@ GameObject:
   - component: {fileID: 1104018130}
   - component: {fileID: 1104018129}
   - component: {fileID: 1104018131}
-  m_Layer: 0
+  - component: {fileID: 1104018132}
+  m_Layer: 5
   m_Name: Light Dish Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5022,14 +5024,29 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1104018128}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2e4329a0a5310641a715e00ad1008cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemygoal: 10
+  enemygoal: 9999999
   goalText: {fileID: 868138291}
   winSceneToLoad: Beta Win Screen
+--- !u!114 &1104018132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104018128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0055b2c839acfda4cb32b880b1349480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemygoal: 0
+  goalText: {fileID: 868138291}
+  winSceneToLoad: EndlessWinScreen
 --- !u!1 &1116475824
 GameObject:
   m_ObjectHideFlags: 0
@@ -7434,7 +7451,7 @@ GameObject:
   - component: {fileID: 1703861396}
   - component: {fileID: 1703861397}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

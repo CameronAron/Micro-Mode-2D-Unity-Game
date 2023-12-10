@@ -9,6 +9,7 @@ public class spawnAtPoints : MonoBehaviour
     public float timer;
 
     public GameObject enemyPrefab;
+    public GameObject hardEnemyPrefab;
 
     public float spawnTime;
 
@@ -27,6 +28,10 @@ public class spawnAtPoints : MonoBehaviour
         {
             Instantiate(enemyPrefab, spawnPoints[Random.Range(0, 7)].position, Quaternion.identity);
             timer = 0;
+
+            if(Random.Range(0, 2) == 1){
+                Instantiate(hardEnemyPrefab, spawnPoints[Random.Range(0, 7)].position, Quaternion.identity);
+            }
         }
     }
 }

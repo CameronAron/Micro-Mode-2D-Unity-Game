@@ -62,7 +62,17 @@ public class PlayerHealth : Health
             if (r == null)
             {
                 Debug.LogWarning("Respawn component not found. Reloading current scene.");
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+                if(SceneManager.GetActiveScene().name == "Endless")
+                {
+                    print("Scene is endless");
+
+                    SceneManager.LoadScene("EndlessWinScreen");
+                }
+                else
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                }
             }
             else r.useRespawn();
         }

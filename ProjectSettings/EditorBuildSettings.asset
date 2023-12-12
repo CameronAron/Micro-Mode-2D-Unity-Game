@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Luke/Main Menu.unity
     guid: 3a3b422e46400e2488fb3b7d5a4a558c
   - enabled: 1
+    path: Assets/Cameron/Instructions.unity
+    guid: b12c1382c59b0a648a7bd70171b4fe63
+  - enabled: 1
+    path: Assets/Cameron/Level Select.unity
+    guid: d20767223d39b73469d9eb8660bd49ab
+  - enabled: 1
     path: Assets/Cameron/Level One.unity
     guid: c7d3b53e9dd5aac43855169c94e14c0c
   - enabled: 1

@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2114986935831893816}
   - component: {fileID: 6682547562195672180}
+  - component: {fileID: 4734789774355307573}
+  - component: {fileID: 5451881719855542965}
   m_Layer: 0
   m_Name: Erm
   m_TagString: Untagged
@@ -84,3 +86,47 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &4734789774355307573
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7213905819362839114}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: faefb5e369b581d45aa6679db7b46d1a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5451881719855542965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7213905819362839114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e7e8611f2e1024b9ec9c4004497e29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doIFlip: 0
+  facingRight: 0
+  idle: {fileID: 7400000, guid: 5631928917c8a854e871a77f70ae7a74, type: 2}
+  moveSide: {fileID: 0}
+  moveUp: {fileID: 0}
+  moveDown: {fileID: 0}
+  attack: {fileID: 0}
+  death: {fileID: 0}
+  action1: {fileID: 0}
+  action2: {fileID: 0}
+  action3: {fileID: 0}

@@ -30,7 +30,18 @@ public abstract class Attack : MonoBehaviour, IAttack<Health>
 
     virtual public void DealDamage(Health target)
     {
-        target.TakeDamage(damage);
+
+        
+        if(gameObject.ToString() == target.gameObject.ToString())
+        {
+            return;
+        }
+        else
+        {
+            print($"{target.gameObject.ToString()} was hit by {gameObject.ToString()}");
+            target.TakeDamage(damage);
+        }
+        
     }
 
     virtual public IEnumerator ExecuteAttack(float attackTime)
